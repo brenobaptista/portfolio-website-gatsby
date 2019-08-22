@@ -38,7 +38,7 @@ const card= ({
 
 card.propTypes = {
     title: PropTypes.string.isRequired,
-    subitle: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
     link: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string),
     image: PropTypes.node

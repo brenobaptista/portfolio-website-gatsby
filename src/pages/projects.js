@@ -1,20 +1,56 @@
 import React from "react"
 import Layout from '../components/layout'
 import SEO from "../components/seo"
-import Card from '../components/card'
+import Card from '../components/Card/card'
 import PropTypes from 'prop-types';
 import {  graphql } from "gatsby"
 import Img from 'gatsby-image'
 
-import portfolio from "../images/portfolio.png"
-import jardimcaipira from '../images/jardimcaipira.png'
-import nimbalo from '../images/nimbalo.png'
-import acens from '../images/acens.png'
-import su from '../images/su.png'
-
 export const queryImage = graphql`
     query {
+        gatsbyastronaut: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+            childImageSharp {
+                fixed(width: 48, height: 48) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
         portfolio: file(relativePath: { eq: "portfolio.png" }) {
+            childImageSharp {
+                fixed(width: 48, height: 48) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        jardimcaipira: file(relativePath: { eq: "jardimcaipira.png" }) {
+            childImageSharp {
+                fixed(width: 48, height: 48) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        nimbalo: file(relativePath: { eq: "nimbalo.png" }) {
+            childImageSharp {
+                fixed(width: 48, height: 48) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        acens: file(relativePath: { eq: "acens.png" }) {
+            childImageSharp {
+                fixed(width: 48, height: 48) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        semanauniversitaria: file(relativePath: { eq: "semanauniversitaria.png" }) {
+            childImageSharp {
+                fixed(width: 48, height: 48) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        manjaro: file(relativePath: { eq: "manjaro.png" }) {
             childImageSharp {
                 fixed(width: 48, height: 48) {
                     ...GatsbyImageSharpFixed
@@ -27,9 +63,12 @@ export const queryImage = graphql`
 const projects = ({ data }) => (
     <Layout>
         <SEO title="Projects" />
-        <h1 className="title has-text-centered">Projects as a developer</h1>
-        <hr />
         <section className="section is-size-4-desktop is-size-5-touch">
+            <h1 className="title has-text-centered">Projects as a Developer</h1>
+            <hr />
+            <p className="has-text-centered">
+                See more on my <a href="https://github.com/Brenaoxline">GitHub</a>
+            </p>
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
                     <Card 
@@ -37,170 +76,73 @@ const projects = ({ data }) => (
                         subtitle="It's my personal portfolio website"
                         link=""
                         tags={['React', 'Gatsby', 'Bulma', 'GraphQL']}
-                        image={<Img fixed={data.portfolio.childImageSharp.fixed} />}
+                        image={<Img fixed={data.gatsbyastronaut.childImageSharp.fixed} alt="portfolio"/>}
                     />
-                    <a href="">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={portfolio} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">Portfolio Website</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">It's my personal portfolio website</p>
-                                        <div className="tags">
-                                            <span className="tag">React</span>
-                                            <span className="tag">Gatsby</span>
-                                            <span className="tag">Bulma</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
-                    <a href="https://jardimcaipira.netlify.com">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={jardimcaipira} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">Jardim Caipira</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">It's my first website ever made</p>
-                                        <div className="tags">
-                                            <span className="tag">HTML</span>
-                                            <span className="tag">CSS</span>
-                                            <span className="tag">Bootstrap</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
-                    <a href="https://nimbalo.herokuapp.com/users/sign_in">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={nimbalo} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">Nimbalo</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">Simple shopping system</p>
-                                        <div className="tags">
-                                            <span className="tag">HTML</span>
-                                            <span className="tag">CSS</span>
-                                            <span className="tag">Bootstrap</span>
-                                            <span className="tag">Ruby on Rails</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
-                    <a href="http://acensjr.mypressonline.com">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={acens} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">Acens Jr.</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">WordPress training</p>
-                                        <div className="tags">
-                                            <span className="tag">WordPress</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
-                    <a href="https://semanauniversitaria2019.uece.br">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={su} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">Semana Universitária</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">My first real client project</p>
-                                        <div className="tags">
-                                            <span className="tag">HTML</span>
-                                            <span className="tag">CSS</span>
-                                            <span className="tag">Bootstrap</span>
-                                            <span className="tag">JavaScript</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
+                    <Card 
+                        title="Jardim Caipira"
+                        subtitle="It's my first website ever made"
+                        link="https://jardimcaipira.netlify.com"
+                        tags={['HTML', 'CSS', 'Bootstrap']}
+                        image={<Img fixed={data.jardimcaipira.childImageSharp.fixed} alt="jardim caipira"/>}
+                    />
+                    <Card 
+                        title="Nimbalo"
+                        subtitle="Simple shopping system"
+                        link="https://nimbalo.herokuapp.com/users/sign_in"
+                        tags={['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails']}
+                        image={<Img fixed={data.nimbalo.childImageSharp.fixed} alt="nimbalo"/>}
+                    />
+                    <Card 
+                        title="Acens"
+                        subtitle="WordPress training"
+                        link="http://acensjr.mypressonline.com"
+                        tags={['WordPress']}
+                        image={<Img fixed={data.acens.childImageSharp.fixed} alt="acens"/>}
+                    />
+                    <Card 
+                        title="Semana Universitária"
+                        subtitle="My first real client project"
+                        link="https://semanauniversitaria2019.uece.br"
+                        tags={['HTML', 'CSS', 'Bootstrap', 'JavaScript']}
+                        image={<Img fixed={data.semanauniversitaria.childImageSharp.fixed} alt="acens"/>}
+                    />
                 </div>
             </div>
         </section>
-        <h1 className="title has-text-centered">Projects as a project manager</h1>
-        <hr />
         <section className="section is-size-4-desktop is-size-5-touch">
+            <h1 className="title has-text-centered">Projects as a Project Manager</h1>
+            <hr />
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
-                    <a href="">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={portfolio} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">ANMAP</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">It's my personal portfolio website</p>
-                                        <div className="tags">
-                                            <span className="tag">React</span>
-                                            <span className="tag">Gatsby</span>
-                                            <span className="tag">Bulma</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
-                    <a href="">
-                        <div className="card">
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left">
-                                        <figure className="image is-48x48">
-                                            <img src={portfolio} alt="portfolio" />
-                                        </figure>
-                                    </div>
-                                    <div className="media-content">
-                                        <h4 className="title is-size-5-desktop is-size-6-touch">Acens Jr.</h4>
-                                        <p className="subtitle is-size-5-desktop is-size-6-touch">It's my personal portfolio website</p>
-                                        <div className="tags">
-                                            <span className="tag">React</span>
-                                            <span className="tag">Gatsby</span>
-                                            <span className="tag">Bulma</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
-                    </a>
+                    <Card 
+                        title="ANMAP"
+                        subtitle="Not done yet"
+                        link=""
+                        tags={['Scrum', 'Project Management']}
+                        image={<Img fixed={data.gatsbyastronaut.childImageSharp.fixed} alt="portfolio"/>}
+                    />
+                </div>
+            </div>
+        </section>
+        <section className="section is-size-4-desktop is-size-5-touch">
+            <h1 className="title has-text-centered">Guides</h1>
+            <hr />
+            <div className="columns">
+                <div className="column is-half is-offset-one-quarter">
+                    <Card 
+                        title="Manjaro i3"
+                        subtitle="Simple recommended softwares"
+                        link="https://github.com/Brenaoxline/todo-manjaro-i3"
+                        tags={['Linux', 'Manjaro', 'Arch Linux']}
+                        image={<Img fixed={data.manjaro.childImageSharp.fixed} alt="portfolio"/>}
+                    />
+                    <Card 
+                        title="Manjaro KDE"
+                        subtitle="Simple recommended softwares"
+                        link="https://github.com/Brenaoxline/todo-manjaro-kde"
+                        tags={['Linux', 'Manjaro', 'Arch Linux']}
+                        image={<Img fixed={data.manjaro.childImageSharp.fixed} alt="portfolio"/>}
+                    />
                 </div>
             </div>
         </section>

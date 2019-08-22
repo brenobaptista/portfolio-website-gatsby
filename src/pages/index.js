@@ -58,13 +58,13 @@ const IndexPage = () => (
     <section className="section content is-size-4-desktop is-size-5-touch">
       <h4 className="title">Hello, I'm Breno Baptista!</h4>
       <p>
-        I'm a Front End Web Developer, I work...
+        I work as a Front End Web Developer and as an English teacher.
       </p>
-      <p>I develop projects...</p>
-      <p>Check it out <Link to="/projects">here</Link>!</p>
+      <p>Currently studying Information Systems Analysis and Development at Millennium College.</p>
+      <p>I've developed projects for myself and for the company I work for. I'm not only a developer, but also a project manager.</p>
+      <p>Check them out <Link to="/projects/">here</Link>!</p>
+      <p>Check out some <Link to="/downloads/">downloads</Link>!</p>
     </section>
-
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
