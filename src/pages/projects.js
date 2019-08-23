@@ -67,7 +67,7 @@ const projects = ({ data }) => (
             <h1 className="title has-text-centered">Projects as a Developer</h1>
             <hr />
             <p className="has-text-centered">
-                See more on my <a href="https://github.com/Brenaoxline">GitHub</a>
+                See more on my <a href="https://github.com/brenobaptista">GitHub</a>
             </p>
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
@@ -132,14 +132,14 @@ const projects = ({ data }) => (
                     <Card 
                         title="Manjaro i3"
                         subtitle="Simple recommended softwares"
-                        link="https://github.com/Brenaoxline/todo-manjaro-i3"
+                        link="https://github.com/brenobaptista/todo-manjaro-i3"
                         tags={['Linux', 'Manjaro', 'Arch Linux']}
                         image={<Img fixed={data.manjaro.childImageSharp.fixed} alt="portfolio"/>}
                     />
                     <Card 
                         title="Manjaro KDE"
                         subtitle="Simple recommended softwares"
-                        link="https://github.com/Brenaoxline/todo-manjaro-kde"
+                        link="https://github.com/brenobaptista/todo-manjaro-kde"
                         tags={['Linux', 'Manjaro', 'Arch Linux']}
                         image={<Img fixed={data.manjaro.childImageSharp.fixed} alt="portfolio"/>}
                     />

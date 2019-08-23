@@ -10,8 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
-import '../styles/bulma.scss'
+import "./layout.scss"
+import '../styles/index.scss'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
         <footer>
           © {new Date().getFullYear()}, Built by
           {` `}
-          <a href="https://github.com/Brenaoxline">Breno Baptista</a>
+          <a href="https://github.com/brenobaptista">Breno Baptista</a>
         </footer>
       </div>
     </>

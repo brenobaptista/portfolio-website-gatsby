@@ -38,7 +38,7 @@ const IndexPage = () => (
           <FontAwesomeIcon icon={faAddressCard} />
         </span>
       </a>
-      <a href="https://github.com/Brenaoxline" aria-label="github">
+      <a href="https://github.com/brenobaptista" aria-label="github">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faGithub} />
         </span>
