@@ -1,5 +1,18 @@
+@import './fonts.scss';
+@import './theme.scss';
+
 @import '~bulma/bulma';
 
-@import './home.scss';
 
-@import '../components/Card/card.scss';
+.photo {
+    margin: 48px auto 24px;
+}
+
+.card {
+    margin: 16px 0;
+    box-shadow: none;
+}
+
+.card:hover {
+    background-color: rgba(#d4d4d4, .15);
+}

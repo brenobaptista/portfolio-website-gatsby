@@ -1,58 +1,51 @@
 import React from "react"
 import Layout from '../components/layout'
 import SEO from "../components/seo"
-import Card from '../components/Card/card'
+import Card from '../components/card'
 import PropTypes from 'prop-types';
-import {  graphql } from "gatsby"
+import { Link, graphql} from "gatsby"
 import Img from 'gatsby-image'
 
 export const queryImage = graphql`
     query {
-        gatsbyastronaut: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-            childImageSharp {
-                fixed(width: 48, height: 48) {
-                    ...GatsbyImageSharpFixed
-                }
-            }
-        }
         portfolio: file(relativePath: { eq: "portfolio.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         jardimcaipira: file(relativePath: { eq: "jardimcaipira.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         nimbalo: file(relativePath: { eq: "nimbalo.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         acens: file(relativePath: { eq: "acens.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         semanauniversitaria: file(relativePath: { eq: "semanauniversitaria.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         manjaro: file(relativePath: { eq: "manjaro.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
@@ -64,10 +57,11 @@ const projects = ({ data }) => (
     <Layout>
         <SEO title="Projects" />
         <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered">Projects as a Developer</h1>
+            <h1 className="title has-text-centered has-text-light">Projects as a Developer</h1>
             <hr />
             <p className="has-text-centered">
-                See more on my <a href="https://github.com/brenobaptista">GitHub</a>
+                See more projects on my <a href="https://github.com/brenobaptista">GitHub</a>
+                <div>Check out my <Link to="/stack/">stack</Link>!</div>
             </p>
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
@@ -75,8 +69,8 @@ const projects = ({ data }) => (
                         title="Portfolio Website"
                         subtitle="It's my personal portfolio website"
                         link=""
-                        tags={['React', 'Gatsby', 'Bulma', 'GraphQL']}
-                        image={<Img fixed={data.gatsbyastronaut.childImageSharp.fixed} alt="portfolio"/>}
+                        tags={['React', 'Gatsby', 'Bulma', 'GraphQL', 'PWA']}
+                        image={<Img fixed={data.portfolio.childImageSharp.fixed} alt="portfolio"/>}
                     />
                     <Card 
                         title="Jardim Caipira"
@@ -110,7 +104,7 @@ const projects = ({ data }) => (
             </div>
         </section>
         <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered">Projects as a Project Manager</h1>
+            <h1 className="title has-text-centered has-text-light">Projects as a Project Manager</h1>
             <hr />
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
@@ -119,13 +113,13 @@ const projects = ({ data }) => (
                         subtitle="Not done yet"
                         link=""
                         tags={['Scrum', 'Project Management']}
-                        image={<Img fixed={data.gatsbyastronaut.childImageSharp.fixed} alt="portfolio"/>}
+                        image={<Img fixed={data.portfolio.childImageSharp.fixed} alt="portfolio"/>}
                     />
                 </div>
             </div>
         </section>
         <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered">Guides</h1>
+            <h1 className="title has-text-centered has-text-light">Guides</h1>
             <hr />
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">

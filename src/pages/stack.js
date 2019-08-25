@@ -14,10 +14,10 @@ const stack = () => (
             </script>
         </Helmet>
         <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered">Stack</h1>
+            <h1 className="title has-text-centered has-text-light">Stack</h1>
             <hr />
             <div className="columns is-centered has-text-centered">
-                <div className="column">
+                <div className="column is-half">
                     <a
                         frameborder="0" 
                         data-theme="light" 

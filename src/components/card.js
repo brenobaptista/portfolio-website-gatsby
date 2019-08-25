@@ -13,15 +13,15 @@ const card= ({
             <div className="card-content">
                 <div className="media">
                     <div className="media-left">
-                        <figure className="image is-48x48">
+                        <figure className="image is-96x96">
                             {image}
                         </figure>
                     </div>
                     <div className="media-content">
-                        <h4 className="title is-size-5-desktop is-size-6-touch">
+                        <h4 className="title is-size-5-desktop is-size-6-touch has-text-light">
                             {title}
                         </h4>
-                        <p className="subtitle is-size-5-desktop is-size-6-touch">
+                        <p className="subtitle is-size-5-desktop is-size-6-touch has-text-light">
                             {subtitle}
                         </p>
                         <div className="tags">

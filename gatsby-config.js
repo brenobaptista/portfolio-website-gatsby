@@ -22,8 +22,8 @@ module.exports = {
         name: `Portfolio Website of Breno Baptista`,
         short_name: `Breno Baptista`,
         start_url: `/`,
-        background_color: `#53297C`,
-        theme_color: `#53297C`,
+        background_color: `#AA00AA`,
+        theme_color: `#AA00AA`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

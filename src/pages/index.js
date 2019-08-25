@@ -30,8 +30,8 @@ const IndexPage = () => (
           alt="Breno Baptista" />
       )} />
     </figure>
-    <h1 className="title has-text-centered">Breno Baptista</h1>
-    <h2 className="subtitle has-text-centered">Front End Web Developer</h2>
+    <h1 className="title has-text-centered has-text-light">Breno Baptista</h1>
+    <h2 className="subtitle has-text-centered has-text-warning">Front End Web Developer</h2>
     <div className="has-text-centered">
       <a href="https://drive.google.com/file/d/1-bGOhiTphjqd_Lmm7jC2mNvDoInBg8GD/view?usp=sharing" aria-label="curriculum vitae">
         <span className="icon is-large fa-2x">
@@ -56,14 +56,16 @@ const IndexPage = () => (
     </div>
     <hr />
     <section className="section content is-size-4-desktop is-size-5-touch">
-      <h4 className="title">Hello, I'm Breno Baptista!</h4>
+      <h4 className="title has-text-light">Hello, I'm Breno Baptista!</h4>
       <p>
         I work as a Front End Web Developer and as an English teacher.
       </p>
       <p>Currently studying Information Systems Analysis and Development at Millennium College.</p>
       <p>I've developed projects for myself and for the company I work for. I'm not only a developer, but also a project manager.</p>
       <p>Check them out <Link to="/projects/">here</Link>!</p>
+      <p>Check out my <Link to="/stack/">stack</Link>!</p>
       <p>Check out some <Link to="/downloads/">downloads</Link>!</p>
+      <p>This website was made using Gatsby (React) and Bulma. It has PWA support and has an excellent performance!</p>
     </section>
   </Layout>
 )

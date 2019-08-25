@@ -1,51 +1,44 @@
 import React from 'react';
 import Layout from '../components/layout'
 import SEO from "../components/seo"
-import Card from '../components/Card/card'
+import Card from '../components/card'
 import PropTypes from 'prop-types';
 import {  graphql } from "gatsby"
 import Img from 'gatsby-image'
 
 export const queryImage = graphql`
     query {
-        gatsbyastronaut: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-            childImageSharp {
-                fixed(width: 48, height: 48) {
-                    ...GatsbyImageSharpFixed
-                }
-            }
-        }
         curriculumvitae: file(relativePath: { eq: "curriculumvitae.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         ebookaguia: file(relativePath: { eq: "ebookaguia.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         medals: file(relativePath: { eq: "medals.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         certificates: file(relativePath: { eq: "certificates.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
         }
         certificates2: file(relativePath: { eq: "certificates2.png" }) {
             childImageSharp {
-                fixed(width: 48, height: 48) {
+                fixed(width: 96, height: 96) {
                     ...GatsbyImageSharpFixed
                 }
             }
@@ -57,7 +50,7 @@ const downloads = ({ data }) => (
     <Layout>
         <SEO title="Downloads" />
         <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered">Downloads</h1>
+            <h1 className="title has-text-centered has-text-light">Downloads</h1>
             <hr />
             <div className="columns">
                 <div className="column is-half is-offset-one-quarter">
