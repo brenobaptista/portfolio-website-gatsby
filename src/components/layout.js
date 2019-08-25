@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container">
         <main>{children}</main>
-        <footer>
+        <footer className="has-text-centered">
           © {new Date().getFullYear()}, Built by
           {` `}
           <a href="https://github.com/brenobaptista">Breno Baptista</a>

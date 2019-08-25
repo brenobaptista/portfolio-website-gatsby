@@ -33,7 +33,7 @@ const IndexPage = () => (
     <h1 className="title has-text-centered has-text-light">Breno Baptista</h1>
     <h2 className="subtitle has-text-centered has-text-warning">Front End Web Developer</h2>
     <div className="has-text-centered">
-      <a href="https://drive.google.com/file/d/1-bGOhiTphjqd_Lmm7jC2mNvDoInBg8GD/view?usp=sharing" aria-label="curriculum vitae">
+      <a href="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi" aria-label="curriculum vitae">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faAddressCard} />
         </span>
@@ -43,7 +43,7 @@ const IndexPage = () => (
           <FontAwesomeIcon icon={faGithub} />
         </span>
       </a>
-      <a href="https://www.linkedin.com/in/breno-baptista-006a4917b/" aria-label="linkedin">
+      <a href="https://www.linkedin.com/in/breno-baptista" aria-label="linkedin">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faLinkedin} />
         </span>

@@ -57,7 +57,7 @@ const downloads = ({ data }) => (
                     <Card 
                         title="Curriculum Vitae (in Portuguese)"
                         subtitle="My latest curriculum vitae"
-                        link="https://drive.google.com/file/d/1-bGOhiTphjqd_Lmm7jC2mNvDoInBg8GD/view?usp=sharing"
+                        link="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi"
                         tags={['Curriculum Vitae']}
                         image={<Img fixed={data.curriculumvitae.childImageSharp.fixed} alt="curriculum vitae"/>}
                     />
