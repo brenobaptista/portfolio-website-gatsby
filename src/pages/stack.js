@@ -18,7 +18,7 @@ const stack = () => (
             <hr />
             <div className="columns is-centered has-text-centered">
                 <div className="column">
-                    <a 
+                    <a
                         frameborder="0" 
                         data-theme="light" 
                         data-layers="1,2,3,4" 
