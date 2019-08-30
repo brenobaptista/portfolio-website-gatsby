@@ -25,7 +25,7 @@ class Header extends Component {
     return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item is-size-4">
+        <Link to="/" className="navbar-item is-size-5">
           {siteTitle}
         </Link>
 
@@ -39,16 +39,16 @@ class Header extends Component {
       <div id="myNavbar" className={`navbar-menu ${burgerClass}`}>
         <div className="navbar-end">
           <Link to="/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            Home
+            HOME
           </Link>
           <Link to="/projects/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            Projects
+            PROJECTS
           </Link>
           <Link to="/stack/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            Stack
+            STACK
           </Link>
           <Link to="/downloads/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            Downloads
+            DOWNLOADS
           </Link>
         </div>
       </div>

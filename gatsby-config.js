@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Breno Baptista`,
     description: `This website is the portfolio of the web developer Breno Baptista`,
-    author: `@gatsbyjs`,
+    author: `Breno Baptista`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,9 +22,9 @@ module.exports = {
         name: `Portfolio Website of Breno Baptista`,
         short_name: `Breno Baptista`,
         start_url: `/`,
-        background_color: `#AA00AA`,
-        theme_color: `#AA00AA`,
-        display: `minimal-ui`,
+        background_color: `#FFDD57`,
+        theme_color: `#FFDD57`,
+        display: `standalone`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },

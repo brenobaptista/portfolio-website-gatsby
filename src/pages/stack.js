@@ -9,22 +9,26 @@ const stack = () => (
         <Helmet>
             <script 
                 async 
-                src="https://cdn1.stackshare.io/javascripts/client-code.js" 
+                src="https://cdn1.stackshare.io/javascripts/client-code.js"
                 charset="utf-8">
             </script>
         </Helmet>
+        <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
+            <div className="hero-body">
+                <h1 className="title has-text-centered has-text-light">Stack</h1>
+                <hr className="custom-hr" />
+            </div>
+        </section>
         <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered has-text-light">Stack</h1>
-            <hr />
             <div className="columns is-centered has-text-centered">
                 <div className="column is-half">
                     <a
-                        frameborder="0" 
+                        frameBorder="0" 
                         data-theme="light" 
-                        data-layers="1,2,3,4" 
+                        data-layers="1,3,4" 
                         data-stack-embed="true" 
                         href="https://embed.stackshare.io/stacks/embed/47bea8027a70794016085b135b1ac9">
-                        StackShare
+                            Loading...
                     </a>
                 </div>
             </div>

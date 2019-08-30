@@ -5,7 +5,7 @@
 
 
 .photo {
-    margin: 48px auto 24px;
+    margin: 5px auto 24px;
 }
 
 .card {
@@ -15,4 +15,44 @@
 
 .card:hover {
     background-color: rgba(#d4d4d4, .15);
+}
+
+.custom-hero {
+    background-color: #1B1D1E;
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: #292929;
+}
+
+.custom-hr {
+    width: 50px;
+    margin: auto;
+}
+
+.custom-hr2 {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.custom-hr3 {
+    width: 130px;
+    margin: auto;
+    margin-bottom: 15px
+}
+
+.custom-hr4 {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 15px
+}
+
+.custom-hr5 {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 15px
+}
+
+.paragraph {
+    text-indent: 50px;
 }

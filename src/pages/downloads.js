@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/layout'
 import SEO from "../components/seo"
 import Card from '../components/card'
 import PropTypes from 'prop-types';
 import {  graphql } from "gatsby"
 import Img from 'gatsby-image'
+import '../../node_modules/aos/dist/aos.css'; 
+import AOS from 'aos'; 
 
 export const queryImage = graphql`
     query {
@@ -43,60 +45,104 @@ export const queryImage = graphql`
                 }
             }
         }
+        books: file(relativePath: { eq: "books.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
     }
 `;
 
-const downloads = ({ data }) => (
-    <Layout>
-        <SEO title="Downloads" />
-        <section className="section is-size-4-desktop is-size-5-touch">
-            <h1 className="title has-text-centered has-text-light">Downloads</h1>
-            <hr />
-            <div className="columns">
-                <div className="column is-half is-offset-one-quarter">
-                    <Card 
-                        title="Curriculum Vitae (in Portuguese)"
-                        subtitle="My latest curriculum vitae"
-                        link="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi"
-                        tags={['Curriculum Vitae']}
-                        image={<Img fixed={data.curriculumvitae.childImageSharp.fixed} alt="curriculum vitae"/>}
-                    />
-                    <Card 
-                        title="Free Ebook (in Portuguese)"
-                        subtitle="The Eagle Negotiator's Guide - Coauthor: Angeliano Sousa"
-                        link="https://drive.google.com/open?id=1EyaNsn_rpdBki7S5lalSI9l73u-QUKBb"
-                        tags={['Ebook', 'Angeliano Sousa']}
-                        image={<Img fixed={data.ebookaguia.childImageSharp.fixed} alt="free ebook"/>}
-                    />
-                    <Card 
-                        title="Certificates"
-                        subtitle="College Certificates"
-                        link="https://drive.google.com/open?id=17bfdvAJm00vJgqQwRiNsJ0zyRgLIGz0v"
-                        tags={['Certificates']}
-                        image={<Img fixed={data.certificates2.childImageSharp.fixed} alt="free ebook"/>}
-                    />
-                    <Card 
-                        title="Medals"
-                        subtitle="Science Olympiads Medals"
-                        link="https://drive.google.com/open?id=1MvF6eOMCpa7Xs1-Jk2g6WwEycGwC3YN-"
-                        tags={['Medals', 'Science Olympiads']}
-                        image={<Img fixed={data.medals.childImageSharp.fixed} alt="medals"/>}
-                    />
-                    <Card 
-                        title="High School Certificates"
-                        subtitle="Science Olympiads Certificates"
-                        link="https://drive.google.com/open?id=1AEKeTtAQSQzmZx1_TlNAbKO22yAipaml"
-                        tags={['Certificates', 'Science Olympiads']}
-                        image={<Img fixed={data.certificates.childImageSharp.fixed} alt="certificates"/>}
-                    />
-                </div>
-            </div>
-        </section>
-    </Layout>
-);
+const test = ({ data }) => {
+    useEffect(() => {
+        AOS.init();
+    })
 
-downloads.propTypes = {
+    return (
+        <Layout>
+            <SEO title="Downloads" />
+            <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
+                <div className="hero-body">
+                    <h1 className="title has-text-centered has-text-light">Downloads</h1>
+                    <hr className="custom-hr3" />
+                </div>
+            </section>
+            <section className="section is-size-4-desktop is-size-5-touch">
+                <div className="columns">
+                    <div className="column is-half is-offset-one-quarter">
+                        <div data-aos="zoom-in-up">
+                            <Card 
+                                title="Free Ebook (in Portuguese)"
+                                subtitle="The Eagle Negotiator's Guide - Coauthor: Angeliano Sousa"
+                                link="https://drive.google.com/open?id=1EyaNsn_rpdBki7S5lalSI9l73u-QUKBb"
+                                tags={['Ebook', 'Angeliano Sousa']}
+                                image={<Img fixed={data.ebookaguia.childImageSharp.fixed} alt="free ebook"/>}
+                            />
+                        </div>
+                        <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                            <Card 
+                                title="Curriculum Vitae (in Portuguese)"
+                                subtitle="My latest curriculum vitae"
+                                link="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi"
+                                tags={['Curriculum Vitae']}
+                                image={<Img fixed={data.curriculumvitae.childImageSharp.fixed} alt="curriculum vitae"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="Certificates"
+                                subtitle="College Certificates"
+                                link="https://drive.google.com/open?id=17bfdvAJm00vJgqQwRiNsJ0zyRgLIGz0v"
+                                tags={['Certificates']}
+                                image={<Img fixed={data.certificates2.childImageSharp.fixed} alt="free ebook"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="Medals"
+                                subtitle="Science Olympiads Medals"
+                                link="https://drive.google.com/open?id=1MvF6eOMCpa7Xs1-Jk2g6WwEycGwC3YN-"
+                                tags={['Medals', 'Science Olympiads']}
+                                image={<Img fixed={data.medals.childImageSharp.fixed} alt="medals"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="High School Certificates"
+                                subtitle="Science Olympiads Certificates"
+                                link="https://drive.google.com/open?id=1AEKeTtAQSQzmZx1_TlNAbKO22yAipaml"
+                                tags={['Certificates', 'Science Olympiads']}
+                                image={<Img fixed={data.certificates.childImageSharp.fixed} alt="certificates"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="Book List (in Portuguese)"
+                                subtitle="All the books I could remember I've read"
+                                link="https://drive.google.com/open?id=1QGIPkdgGwMaAtqm8Q7FQ6BuCwlffany9qPOXM_igaHM"
+                                tags={['Books', 'Ebooks', 'Knowledge']}
+                                image={<Img fixed={data.books.childImageSharp.fixed} alt="book list"/>}
+                            />
+                        </div><div data-aos="flip-down">
+                            <Card 
+                                title="Video Game List (in Portuguese)"
+                                subtitle="All the games I could remember I've played"
+                                link="https://drive.google.com/open?id=122q3gnjl811OrVBvV7gJRORbK70Lar12AMgRaqy3cpQ"
+                                tags={['Games', 'Gamer', 'Video Games']}
+                                image={<Img fixed={data.books.childImageSharp.fixed} alt="video games list"/>}
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </Layout>
+    );
+};
+
+test.propTypes = {
     data: PropTypes.object.isRequired
 };
 
-export default downloads;
+export default test;

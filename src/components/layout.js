@@ -26,13 +26,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="container">
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <Header siteTitle="BRENO BAPTISTA" />
+      <div>
         <main>{children}</main>
         <footer className="has-text-centered">
-          © {new Date().getFullYear()}, Built by
+          © {new Date().getFullYear()}
           {` `}
-          <a href="https://github.com/brenobaptista">Breno Baptista</a>
+          Breno Baptista.
         </footer>
       </div>
     </>
