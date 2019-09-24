@@ -58,6 +58,27 @@ export const queryImage = graphql`
                     ...GatsbyImageSharpFixed
                 }
             }
+        }        
+        aeon: file(relativePath: { eq: "aeon.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        parrot: file(relativePath: { eq: "parrot.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        unijus: file(relativePath: { eq: "unijus.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
         }
     }
 `;
@@ -84,6 +105,15 @@ const projects = ({ data }) => {
                     <div className="column is-half is-offset-one-quarter">
                         <div data-aos="zoom-in-up">
                             <Card 
+                                title="Aeon Planner"
+                                subtitle="Trello-like React PWA"
+                                link="https://aeonplanner.netlify.com/"
+                                tags={['PWA', 'React', 'Redux', 'REST API']}
+                                image={<Img fixed={data.aeon.childImageSharp.fixed} alt="aeon"/>}
+                            />
+                        </div>
+                        <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                            <Card 
                                 title="Portfolio Website"
                                 subtitle="You're already here!"
                                 link=""
@@ -91,7 +121,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.portfolio.childImageSharp.fixed} alt="portfolio"/>}
                             />
                         </div>
-                        <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Acens"
                                 subtitle="WordPress training - company I work for"
@@ -130,9 +160,14 @@ const projects = ({ data }) => {
                     </div>
                 </div>
             </section>
+
+            <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
+                <div className="hero-body">
+                    <h1 className="title has-text-centered has-text-light">Projects as a Project Manager</h1>
+                    <hr className="custom-hr4"/>
+                </div>
+            </section>
             <section className="section is-size-4-desktop is-size-5-touch">
-                <h1 className="title has-text-centered has-text-light">Projects as a Project Manager</h1>
-                <hr className="custom-hr4"/>
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
                         <div data-aos="flip-down">
@@ -144,12 +179,35 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.anmap.childImageSharp.fixed} alt="anmap"/>}
                             />
                         </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="Parrot Mercantil"
+                                subtitle="Online grocery store in Sobral"
+                                link="https://parrotmercantil.com.br"
+                                tags={['Scrum', 'Project Management']}
+                                image={<Img fixed={data.parrot.childImageSharp.fixed} alt="parrot"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="Unijus Jr."
+                                subtitle="Law junior enterprise"
+                                link="https://unijusjr.com.br"
+                                tags={['Scrum', 'Project Management']}
+                                image={<Img fixed={data.unijus.childImageSharp.fixed} alt="unijus"/>}
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
+            
+            <section className="hero custom-hero is-size-4-desktop is-size-5-touch">
+                <div className="hero-body">
+                    <h1 className="title has-text-centered has-text-light">Guides</h1>
+                    <hr className="custom-hr5"/>
+                </div>
+            </section>
             <section className="section is-size-4-desktop is-size-5-touch">
-                <h1 className="title has-text-centered has-text-light">Guides</h1>
-                <hr className="custom-hr5"/>
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
                         <div data-aos="flip-down">

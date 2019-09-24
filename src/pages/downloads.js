@@ -125,14 +125,6 @@ const test = ({ data }) => {
                                 tags={['Books', 'Ebooks', 'Knowledge']}
                                 image={<Img fixed={data.books.childImageSharp.fixed} alt="book list"/>}
                             />
-                        </div><div data-aos="flip-down">
-                            <Card 
-                                title="Video Game List (in Portuguese)"
-                                subtitle="All the games I could remember I've played"
-                                link="https://drive.google.com/open?id=122q3gnjl811OrVBvV7gJRORbK70Lar12AMgRaqy3cpQ"
-                                tags={['Games', 'Gamer', 'Video Games']}
-                                image={<Img fixed={data.books.childImageSharp.fixed} alt="video games list"/>}
-                            />
                         </div>
                     </div>
                 </div>

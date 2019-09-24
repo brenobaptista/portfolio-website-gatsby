@@ -34,40 +34,43 @@ const IndexPage = () => {
             } render={data => (
               <Img 
                 fixed={data.photo.childImageSharp.fixed}
-                imgStyle={{ borderRadius: '100%' }}
+                imgStyle={{ borderRadius: '100%', 
+                            borderStyle: 'solid',
+                            borderWidth: '1px',
+                            padding: '.5rem',
+                            borderColor: '#181A1B',
+                            backgroundColor: '#181A1B' }}
                 alt="Breno Baptista" />
             )} />
           </figure>
           <h1 className="title is-1 has-text-centered has-text-light">Breno Baptista</h1>
           <h2 className="subtitle is-4 has-text-centered has-text-light">Front End Web Developer</h2>
-          <div data-aos="zoom-in">
-            <div className="has-text-centered">
-              <a href="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi" aria-label="curriculum vitae">
-                <span className="icon is-large fa-2x">
-                  <FontAwesomeIcon icon={faAddressCard} />
-                </span>
-              </a>
-              <a href="https://github.com/brenobaptista" aria-label="github">
-                <span className="icon is-large fa-2x">
-                  <FontAwesomeIcon icon={faGithub} />
-                </span>
-              </a>
-              <a href="https://www.linkedin.com/in/breno-baptista" aria-label="linkedin">
-                <span className="icon is-large fa-2x">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </span>
-              </a>
-              <a href="https://www.instagram.com/breno.mabapt/" aria-label="instagram">
-                <span className="icon is-large fa-2x">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </span>
-              </a>
-              <a href="mailto:brenomb07@gmail.com" aria-label="github">
-                <span className="icon is-large fa-2x">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </span>
-              </a>
-            </div>
+          <div className="has-text-centered">
+            <a href="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi" aria-label="curriculum vitae">
+              <span className="icon is-large fa-2x">
+                <FontAwesomeIcon icon={faAddressCard} />
+              </span>
+            </a>
+            <a href="https://github.com/brenobaptista" aria-label="github">
+              <span className="icon is-large fa-2x">
+                <FontAwesomeIcon icon={faGithub} />
+              </span>
+            </a>
+            <a href="https://www.linkedin.com/in/breno-baptista" aria-label="linkedin">
+              <span className="icon is-large fa-2x">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </span>
+            </a>
+            <a href="https://www.instagram.com/breno.mabapt/" aria-label="instagram">
+              <span className="icon is-large fa-2x">
+                <FontAwesomeIcon icon={faInstagram} />
+              </span>
+            </a>
+            <a href="mailto:brenomb07@gmail.com" aria-label="github">
+              <span className="icon is-large fa-2x">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -78,11 +81,6 @@ const IndexPage = () => {
         </p>
         <p className="has-text-justified paragraph">
           I've developed <Link to="/projects/">projects</Link> for myself and for the company I work for. I'm not only a developer, but also a project manager. Check out some more <Link to="/downloads/">things</Link> about me!
-        </p>
-        <h3 className="title has-text-light">About This Project</h3>
-        <p className="has-text-justified paragraph">
-          This website was made using Gatsby (React) and Bulma. It has PWA support and an excellent performance.
-          I've learned a lot making this website, so I hope you like it!
         </p>
       </section>
     </Layout>
