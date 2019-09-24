@@ -192,7 +192,7 @@ const projects = ({ data }) => {
                             <Card 
                                 title="Unijus Jr."
                                 subtitle="Law junior enterprise"
-                                link="https://unijusjr.com.br"
+                                link="http://unijusjr.com.br"
                                 tags={['Scrum', 'Project Management']}
                                 image={<Img fixed={data.unijus.childImageSharp.fixed} alt="unijus"/>}
                             />
