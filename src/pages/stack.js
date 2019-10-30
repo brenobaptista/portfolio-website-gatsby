@@ -27,7 +27,8 @@ const stack = () => (
                         data-theme="light" 
                         data-layers="1,3,4" 
                         data-stack-embed="true" 
-                        href="https://embed.stackshare.io/stacks/embed/47bea8027a70794016085b135b1ac9">
+                        href="https://embed.stackshare.io/stacks/embed/47bea8027a70794016085b135b1ac9"
+                    >
                             Loading...
                     </a>
                 </div>

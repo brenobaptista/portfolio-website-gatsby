@@ -44,7 +44,7 @@ const IndexPage = () => {
             )} />
           </figure>
           <h1 className="title is-1 has-text-centered has-text-light">Breno Baptista</h1>
-          <h2 className="subtitle is-4 has-text-centered has-text-light">Front End Web Developer</h2>
+          <h2 className="subtitle is-4 has-text-centered has-text-light">Full Stack Web Developer</h2>
           <div className="has-text-centered">
             <a href="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi" aria-label="curriculum vitae">
               <span className="icon is-large fa-2x">
@@ -77,7 +77,7 @@ const IndexPage = () => {
       <section className="container section content is-size-4-desktop is-size-5-touch">
         <h3 className="title has-text-light">About Me</h3>
         <p className="has-text-justified paragraph">
-          I love studying Linux (Arch Linux), programming, reading, playing video games and traveling. Also, I can play the ocarina. Nowadays, I work as a <Link to="/stack/">web developer</Link> and as an English teacher. I'm currently studying Information Systems Analysis and Development at Millennium College.
+          I love studying Linux (Arch Linux), programming, reading, playing video games and traveling. Also, I can play the ocarina. Nowadays, I work as a <Link to="/stack/">web developer</Link> and as an English teacher. I'm currently studying Information Systems Analysis and Development at UNIRB.
         </p>
         <p className="has-text-justified paragraph">
           I've developed <Link to="/projects/">projects</Link> for myself and for the company I work for. I'm not only a developer, but also a project manager. Check out some more <Link to="/downloads/">things</Link> about me!

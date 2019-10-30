@@ -106,13 +106,13 @@ const projects = ({ data }) => {
                         <div data-aos="zoom-in-up">
                             <Card 
                                 title="Aeon Planner"
-                                subtitle="Trello-like React PWA"
+                                subtitle="Personal Planner React PWA"
                                 link="https://aeonplanner.netlify.com/"
-                                tags={['PWA', 'React', 'Redux', 'REST API']}
+                                tags={['PWA', 'React', 'Redux', 'Node', 'REST API', 'Full Stack']}
                                 image={<Img fixed={data.aeon.childImageSharp.fixed} alt="aeon"/>}
                             />
                         </div>
-                        <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                        <div data-aos="zoom-in-up" >
                             <Card 
                                 title="Portfolio Website"
                                 subtitle="You're already here!"
@@ -121,22 +121,22 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.portfolio.childImageSharp.fixed} alt="portfolio"/>}
                             />
                         </div>
-                        <div data-aos="zoom-in-up">
-                            <Card 
-                                title="Acens"
-                                subtitle="WordPress training - company I work for"
-                                link="http://acensjr.mypressonline.com"
-                                tags={['WordPress']}
-                                image={<Img fixed={data.acens.childImageSharp.fixed} alt="acens"/>}
-                            />
-                        </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="flip-down" data-aos-anchor-placement="top-bottom">
                             <Card 
                                 title="Semana Universitária"
                                 subtitle="Academic Week 2019 - UECE"
                                 link="https://semanauniversitaria2019.uece.br"
                                 tags={['HTML', 'CSS', 'Bootstrap', 'JavaScript']}
                                 image={<Img fixed={data.semanauniversitaria.childImageSharp.fixed} alt="semana universitaria"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="Acens"
+                                subtitle="WordPress training - company I work for"
+                                link="http://acensjr.mypressonline.com"
+                                tags={['WordPress']}
+                                image={<Img fixed={data.acens.childImageSharp.fixed} alt="acens"/>}
                             />
                         </div>
                         <div data-aos="flip-down">
@@ -172,20 +172,20 @@ const projects = ({ data }) => {
                     <div className="column is-half is-offset-one-quarter">
                         <div data-aos="flip-down">
                             <Card 
-                                title="ANMAP"
-                                subtitle="The best rubbers, plastics and metals!"
-                                link="http://anmap.com.br"
-                                tags={['Scrum', 'Project Management']}
-                                image={<Img fixed={data.anmap.childImageSharp.fixed} alt="anmap"/>}
-                            />
-                        </div>
-                        <div data-aos="flip-down">
-                            <Card 
                                 title="Parrot Mercantil"
                                 subtitle="Online grocery store in Sobral"
                                 link="https://parrotmercantil.com.br"
                                 tags={['Scrum', 'Project Management']}
                                 image={<Img fixed={data.parrot.childImageSharp.fixed} alt="parrot"/>}
+                            />
+                        </div>
+                        <div data-aos="flip-down">
+                            <Card 
+                                title="ANMAP"
+                                subtitle="The best rubbers, plastics and metals!"
+                                link="http://anmap.com.br"
+                                tags={['Scrum', 'Project Management']}
+                                image={<Img fixed={data.anmap.childImageSharp.fixed} alt="anmap"/>}
                             />
                         </div>
                         <div data-aos="flip-down">
