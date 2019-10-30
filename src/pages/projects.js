@@ -121,7 +121,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.portfolio.childImageSharp.fixed} alt="portfolio"/>}
                             />
                         </div>
-                        <div data-aos="flip-down" data-aos-anchor-placement="top-bottom">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Semana Universitária"
                                 subtitle="Academic Week 2019 - UECE"
@@ -130,7 +130,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.semanauniversitaria.childImageSharp.fixed} alt="semana universitaria"/>}
                             />
                         </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Acens"
                                 subtitle="WordPress training - company I work for"
@@ -139,7 +139,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.acens.childImageSharp.fixed} alt="acens"/>}
                             />
                         </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Nimbalo"
                                 subtitle="A basic shopping system"
@@ -148,7 +148,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.nimbalo.childImageSharp.fixed} alt="nimbalo"/>}
                             />
                         </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Jardim Caipira"
                                 subtitle="A company that sells plants and vases"
@@ -170,7 +170,7 @@ const projects = ({ data }) => {
             <section className="section is-size-4-desktop is-size-5-touch">
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Parrot Mercantil"
                                 subtitle="Online grocery store in Sobral"
@@ -179,7 +179,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.parrot.childImageSharp.fixed} alt="parrot"/>}
                             />
                         </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="ANMAP"
                                 subtitle="The best rubbers, plastics and metals!"
@@ -188,7 +188,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.anmap.childImageSharp.fixed} alt="anmap"/>}
                             />
                         </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Unijus Jr."
                                 subtitle="Law junior enterprise"
@@ -210,7 +210,7 @@ const projects = ({ data }) => {
             <section className="section is-size-4-desktop is-size-5-touch">
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Manjaro i3"
                                 subtitle="Recommended software for Mi3"
@@ -219,7 +219,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.manjaro.childImageSharp.fixed} alt="manjaro i3"/>}
                             />
                         </div>
-                        <div data-aos="flip-down">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Manjaro i3 - Troubleshooting"
                                 subtitle="Manjaro i3 common problems"
@@ -228,7 +228,7 @@ const projects = ({ data }) => {
                                 image={<Img fixed={data.manjaro.childImageSharp.fixed} alt="manjaro i3 troubleshooting"/>}
                             />
                         </div>
-                        <div data-aos="fade-up">
+                        <div data-aos="zoom-in-up">
                             <Card 
                                 title="Manjaro KDE"
                                 subtitle="Recommended software for Manjaro KDE"

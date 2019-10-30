@@ -72,7 +72,7 @@ const test = ({ data }) => {
             <section className="section is-size-4-desktop is-size-5-touch">
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
-                        <div data-aos="zoom-in-up">
+                        <div data-aos="flip-down">
                             <Card 
                                 title="Free Ebook (in Portuguese)"
                                 subtitle="The Eagle Negotiator's Guide - Coauthor: Angeliano Sousa"
@@ -81,7 +81,7 @@ const test = ({ data }) => {
                                 image={<Img fixed={data.ebookaguia.childImageSharp.fixed} alt="free ebook"/>}
                             />
                         </div>
-                        <div data-aos="zoom-in-up" data-aos-anchor-placement="top-bottom">
+                        <div data-aos="flip-down">
                             <Card 
                                 title="Curriculum Vitae (in Portuguese)"
                                 subtitle="My latest curriculum vitae"
