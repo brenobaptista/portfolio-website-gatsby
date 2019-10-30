@@ -17,7 +17,7 @@ const card= ({
                             {image}
                         </figure>
                     </div>
-                    <div className="media-content">
+                    <div className="media-content no-scroll">
                         <h4 className="title is-size-5-desktop is-size-6-touch has-text-light">
                             {title}
                         </h4>
