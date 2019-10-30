@@ -46,27 +46,27 @@ const IndexPage = () => {
           <h1 className="title is-1 has-text-centered has-text-light">Breno Baptista</h1>
           <h2 className="subtitle is-4 has-text-centered has-text-light">Full Stack Web Developer</h2>
           <div className="has-text-centered">
-            <a href="https://drive.google.com/open?id=1L1cQq_AgfhuvPSpnk5HLBQiYuQQlWTNi" aria-label="curriculum vitae">
+            <a href="https://drive.google.com/open?id=1dlDQyUrkii06DNK2xTroi2t1eCNA8raX" target="_blank" aria-label="curriculum vitae">
               <span className="icon is-large fa-2x">
                 <FontAwesomeIcon icon={faAddressCard} />
               </span>
             </a>
-            <a href="https://github.com/brenobaptista" aria-label="github">
+            <a href="https://github.com/brenobaptista" target="_blank" aria-label="github">
               <span className="icon is-large fa-2x">
                 <FontAwesomeIcon icon={faGithub} />
               </span>
             </a>
-            <a href="https://www.linkedin.com/in/breno-baptista" aria-label="linkedin">
+            <a href="https://www.linkedin.com/in/breno-baptista" target="_blank" aria-label="linkedin">
               <span className="icon is-large fa-2x">
                 <FontAwesomeIcon icon={faLinkedin} />
               </span>
             </a>
-            <a href="https://www.instagram.com/breno.mabapt/" aria-label="instagram">
+            <a href="https://www.instagram.com/breno.mabapt/" target="_blank" aria-label="instagram">
               <span className="icon is-large fa-2x">
                 <FontAwesomeIcon icon={faInstagram} />
               </span>
             </a>
-            <a href="mailto:brenomb07@gmail.com" aria-label="github">
+            <a href="mailto:brenomb07@gmail.com" target="_blank" aria-label="github">
               <span className="icon is-large fa-2x">
                 <FontAwesomeIcon icon={faEnvelope} />
               </span>
