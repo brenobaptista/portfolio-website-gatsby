@@ -10,6 +10,13 @@ import AOS from 'aos';
 
 export const queryImage = graphql`
     query {
+        spectacles: file(relativePath: { eq: "spectacles.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
         portfolio: file(relativePath: { eq: "portfolio.png" }) {
             childImageSharp {
                 fixed(width: 96, height: 96) {
@@ -103,6 +110,15 @@ const projects = ({ data }) => {
             <section className="section is-size-4-desktop is-size-5-touch">
                 <div className="columns">
                     <div className="column is-half is-offset-one-quarter">
+                        <div data-aos="zoom-in-up">
+                            <Card 
+                                title="Spectacles Finances"
+                                subtitle="My Personal Finance App (iOS and Android)"
+                                link="https://snack.expo.io/@brenaoxline/spectacles-finances?session_id=snack-session-Oi!trDiNL&preview=true&platform=ios&iframeId=a6wgr04u9t&theme=dark"
+                                tags={['React Native', 'Firebase', 'Expo Snack']}
+                                image={<Img fixed={data.spectacles.childImageSharp.fixed} alt="spectacles"/>}
+                            />
+                        </div>
                         <div data-aos="zoom-in-up">
                             <Card 
                                 title="Aeon Planner"
