@@ -46,7 +46,7 @@ const IndexPage = () => {
           <h1 className="title is-1 has-text-centered has-text-light">Breno Baptista</h1>
           <h2 className="subtitle is-4 has-text-centered has-text-light">Full Stack Web Developer</h2>
           <div className="has-text-centered">
-            <a href="https://drive.google.com/open?id=1dlDQyUrkii06DNK2xTroi2t1eCNA8raX" target="_blank" aria-label="curriculum vitae">
+            <a href="https://drive.google.com/open?id=1ALPBJhHZ62dUje8WTOZ9Q4Bq3er-5wBu" target="_blank" aria-label="curriculum vitae">
               <span className="icon is-large fa-2x">
                 <FontAwesomeIcon icon={faAddressCard} />
               </span>

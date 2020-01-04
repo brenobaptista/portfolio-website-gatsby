@@ -10,6 +10,13 @@ import AOS from 'aos';
 
 export const queryImage = graphql`
     query {
+        calculator: file(relativePath: { eq: "calculator.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
         spectacles: file(relativePath: { eq: "spectacles.png" }) {
             childImageSharp {
                 fixed(width: 96, height: 96) {
@@ -126,6 +133,15 @@ const projects = ({ data }) => {
                                 link="https://aeonplanner.netlify.com/"
                                 tags={['PWA', 'React', 'Redux', 'Node', 'REST API', 'Full Stack']}
                                 image={<Img fixed={data.aeon.childImageSharp.fixed} alt="aeon"/>}
+                            />
+                        </div>
+                        <div data-aos="zoom-in-up">
+                            <Card 
+                                title="iOS Calculator"
+                                subtitle="iOS Calculator clone"
+                                link="https://snack.expo.io/@brenaoxline/calculator?session_id=snack-session-vrWVGJBoW&preview=true&platform=ios&iframeId=oj90vwabru&theme=dark/"
+                                tags={['React Native', 'Expo Snack', 'iOS Design']}
+                                image={<Img fixed={data.calculator.childImageSharp.fixed} alt="calculator"/>}
                             />
                         </div>
                         <div data-aos="zoom-in-up" >
