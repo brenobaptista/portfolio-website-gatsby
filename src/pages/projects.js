@@ -10,6 +10,13 @@ import AOS from 'aos';
 
 export const queryImage = graphql`
     query {
+        pomodoro: file(relativePath: { eq: "pomodoro.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
         calculator: file(relativePath: { eq: "calculator.png" }) {
             childImageSharp {
                 fixed(width: 96, height: 96) {
@@ -119,6 +126,15 @@ const projects = ({ data }) => {
                     <div className="column is-half is-offset-one-quarter">
                         <div data-aos="zoom-in-up">
                             <Card 
+                                title="Pomodoro"
+                                subtitle="Pomodoro App (iOS and Android)"
+                                link="https://snack.expo.io/@brenaoxline/pomodoro?session_id=snack-session-wVXau2DzY&preview=true&platform=android&iframeId=i7mnt0ixrd&theme=dark"
+                                tags={['React Native', 'Redux', 'Expo Snack']}
+                                image={<Img fixed={data.pomodoro.childImageSharp.fixed} alt="pomodoro"/>}
+                            />
+                        </div>
+                        <div data-aos="zoom-in-up">
+                            <Card 
                                 title="Spectacles Finances"
                                 subtitle="My Personal Finance App (iOS and Android)"
                                 link="https://snack.expo.io/@brenaoxline/spectacles-finances?session_id=snack-session-Oi!trDiNL&preview=true&platform=ios&iframeId=a6wgr04u9t&theme=dark"
@@ -138,7 +154,7 @@ const projects = ({ data }) => {
                         <div data-aos="zoom-in-up">
                             <Card 
                                 title="iOS Calculator"
-                                subtitle="iOS Calculator clone"
+                                subtitle="iOS Calculator clone (iOS and Android)"
                                 link="https://snack.expo.io/@brenaoxline/calculator?session_id=snack-session-vrWVGJBoW&preview=true&platform=ios&iframeId=oj90vwabru&theme=dark/"
                                 tags={['React Native', 'Expo Snack', 'iOS Design']}
                                 image={<Img fixed={data.calculator.childImageSharp.fixed} alt="calculator"/>}
