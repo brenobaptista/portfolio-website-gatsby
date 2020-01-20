@@ -10,6 +10,13 @@ import AOS from 'aos';
 
 export const queryImage = graphql`
     query {
+        acenscoin: file(relativePath: { eq: "acenscoin.png" }) {
+            childImageSharp {
+                fixed(width: 96, height: 96) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
         pomodoro: file(relativePath: { eq: "pomodoro.png" }) {
             childImageSharp {
                 fixed(width: 96, height: 96) {
@@ -135,20 +142,29 @@ const projects = ({ data }) => {
                         </div>
                         <div data-aos="zoom-in-up">
                             <Card 
-                                title="Spectacles Finances"
-                                subtitle="My Personal Finance App (iOS and Android)"
-                                link="https://snack.expo.io/@brenaoxline/spectacles-finances?session_id=snack-session-Oi!trDiNL&preview=true&platform=ios&iframeId=a6wgr04u9t&theme=dark"
-                                tags={['React Native', 'Firebase', 'Expo Snack']}
-                                image={<Img fixed={data.spectacles.childImageSharp.fixed} alt="spectacles"/>}
-                            />
-                        </div>
-                        <div data-aos="zoom-in-up">
-                            <Card 
                                 title="Aeon Planner"
                                 subtitle="Personal Planner React PWA"
                                 link="https://aeonplanner.netlify.com/"
                                 tags={['PWA', 'React', 'Redux', 'Node', 'REST API', 'Full Stack']}
                                 image={<Img fixed={data.aeon.childImageSharp.fixed} alt="aeon"/>}
+                            />
+                        </div>
+                        <div data-aos="zoom-in-up">
+                            <Card 
+                                title="AcensCoin"
+                                subtitle="A cryptocurrency made using Node.js"
+                                link="https://github.com/brenobaptista/blockchain-acenscoin-nodejs"
+                                tags={['Node', 'Blockchain', 'Cryptocurrency']}
+                                image={<Img fixed={data.acenscoin.childImageSharp.fixed} alt="acenscoin"/>}
+                            />
+                        </div>
+                        <div data-aos="zoom-in-up">
+                            <Card 
+                                title="Spectacles Finances"
+                                subtitle="My Personal Finance App (iOS and Android)"
+                                link="https://snack.expo.io/@brenaoxline/spectacles-finances?session_id=snack-session-Oi!trDiNL&preview=true&platform=ios&iframeId=a6wgr04u9t&theme=dark"
+                                tags={['React Native', 'Firebase', 'Expo Snack']}
+                                image={<Img fixed={data.spectacles.childImageSharp.fixed} alt="spectacles"/>}
                             />
                         </div>
                         <div data-aos="zoom-in-up">
