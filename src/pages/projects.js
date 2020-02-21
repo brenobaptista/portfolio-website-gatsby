@@ -3,21 +3,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/card"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../../node_modules/aos/dist/aos.css"
 import AOS from "aos"
 
 export const queryImage = graphql`
   query {
-    bts: file(relativePath: { eq: "bts.png" }) {
+    libretutor: file(relativePath: { eq: "libretutor.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    acenscoin: file(relativePath: { eq: "acenscoin.png" }) {
+    bts: file(relativePath: { eq: "bts.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -39,27 +39,6 @@ export const queryImage = graphql`
       }
     }
     spectacles: file(relativePath: { eq: "spectacles.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    portfolio: file(relativePath: { eq: "portfolio.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    jardimcaipira: file(relativePath: { eq: "jardimcaipira.png" }) {
-      childImageSharp {
-        fixed(width: 96, height: 96) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    acens: file(relativePath: { eq: "acens.png" }) {
       childImageSharp {
         fixed(width: 96, height: 96) {
           ...GatsbyImageSharpFixed
@@ -136,10 +115,24 @@ const projects = ({ data }) => {
           <div className="column is-half is-offset-one-quarter">
             <div data-aos="zoom-in-up">
               <Card
+                title="LibreTutor"
+                subtitle="LibreTutor - Connecting Tutors and Pupils"
+                link="https://github.com/libretutor"
+                tags={["Full Stack", "Node", "React Native", "Maps"]}
+                image={
+                  <Img
+                    fixed={data.libretutor.childImageSharp.fixed}
+                    alt="libretutor"
+                  />
+                }
+              />
+            </div>
+            <div data-aos="zoom-in-up">
+              <Card
                 title="Pomodoro"
                 subtitle="Pomodoro App (iOS and Android)"
                 link="https://github.com/brenobaptista/pomodoro-react-native"
-                tags={["React Native", "Redux", "Expo", "Unit Testing"]}
+                tags={["React Native", "Redux", "Unit Testing"]}
                 image={
                   <Img
                     fixed={data.pomodoro.childImageSharp.fixed}
@@ -153,14 +146,7 @@ const projects = ({ data }) => {
                 title="Aeon Planner"
                 subtitle="Personal Planner React PWA"
                 link="https://aeonplanner.netlify.com/"
-                tags={[
-                  "PWA",
-                  "React",
-                  "Redux",
-                  "Node",
-                  "REST API",
-                  "Full Stack",
-                ]}
+                tags={["PWA", "React", "Redux", "Node", "Full Stack"]}
                 image={
                   <Img fixed={data.aeon.childImageSharp.fixed} alt="aeon" />
                 }
@@ -196,42 +182,14 @@ const projects = ({ data }) => {
             </div>
             <div data-aos="zoom-in-up">
               <Card
-                title="AcensCoin"
-                subtitle="A cryptocurrency made using Node.js"
-                link="https://github.com/brenobaptista/blockchain-acenscoin-nodejs"
-                tags={["Node", "Blockchain", "Cryptocurrency"]}
-                image={
-                  <Img
-                    fixed={data.acenscoin.childImageSharp.fixed}
-                    alt="acenscoin"
-                  />
-                }
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
                 title="BTS Brindes"
                 subtitle="Gifts that make you sell more!"
                 link="https://btsbrindes.com.br"
-                tags={["Ecommerce, WooCommerce, WordPress"]}
+                tags={["Ecommerce, WooCommerce"]}
                 image={
                   <Img
                     fixed={data.bts.childImageSharp.fixed}
                     alt="bts brindes"
-                  />
-                }
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Portfolio Website"
-                subtitle="You're already here!"
-                link=""
-                tags={["React", "Gatsby", "Bulma", "GraphQL", "PWA"]}
-                image={
-                  <Img
-                    fixed={data.portfolio.childImageSharp.fixed}
-                    alt="portfolio"
                   />
                 }
               />
@@ -246,31 +204,6 @@ const projects = ({ data }) => {
                   <Img
                     fixed={data.semanauniversitaria.childImageSharp.fixed}
                     alt="semana universitaria"
-                  />
-                }
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Acens"
-                subtitle="WordPress training - company I work for"
-                link="http://acensjr.mypressonline.com"
-                tags={["WordPress"]}
-                image={
-                  <Img fixed={data.acens.childImageSharp.fixed} alt="acens" />
-                }
-              />
-            </div>
-            <div data-aos="zoom-in-up">
-              <Card
-                title="Jardim Caipira"
-                subtitle="A company that sells plants and vases"
-                link="https://jardimcaipira.netlify.com"
-                tags={["HTML", "CSS", "Bootstrap"]}
-                image={
-                  <Img
-                    fixed={data.jardimcaipira.childImageSharp.fixed}
-                    alt="jardim caipira"
                   />
                 }
               />

@@ -8,9 +8,9 @@ class Header extends Component {
   }
 
   handleMenu = () => {
-    this.setState((previousState) => ({ 
-      isMenuOpen: !previousState.isMenuOpen
-     }));
+    this.setState(previousState => ({
+      isMenuOpen: !previousState.isMenuOpen,
+    }))
   }
 
   closeMenu = () => {
@@ -18,42 +18,65 @@ class Header extends Component {
   }
 
   render = () => {
-    const { siteTitle } = this.props;
-    const { isMenuOpen } = this.state;
-    const burgerClass = isMenuOpen ? 'is-active':'';
+    const { siteTitle } = this.props
+    const { isMenuOpen } = this.state
+    const burgerClass = isMenuOpen ? "is-active" : ""
 
     return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item is-size-5">
-          {siteTitle}
-        </Link>
+      <nav className="navbar" role="navigation" aria-label="main navigation">
+        <div className="navbar-brand">
+          <Link to="/" className="navbar-item is-size-5">
+            {siteTitle}
+          </Link>
 
-        <a role="button" className={`navbar-burger burger ${burgerClass}`} aria-label="menu" aria-expanded="false" data-target="myNavbar" onClick={this.handleMenu}>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="myNavbar" className={`navbar-menu ${burgerClass}`}>
-        <div className="navbar-end">
-          <Link to="/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            HOME
-          </Link>
-          <Link to="/projects/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            PROJECTS
-          </Link>
-          <Link to="/stack/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            STACK
-          </Link>
-          <Link to="/downloads/" className="navbar-item is-size-5" onClick={this.closeMenu}>
-            DOWNLOADS
-          </Link>
+          <a
+            role="button"
+            className={`navbar-burger burger ${burgerClass}`}
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="myNavbar"
+            onClick={this.handleMenu}
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-      </div>
-    </nav>
-    );
+
+        <div id="myNavbar" className={`navbar-menu ${burgerClass}`}>
+          <div className="navbar-end">
+            <Link
+              to="/"
+              className="navbar-item is-size-5"
+              onClick={this.closeMenu}
+            >
+              HOME
+            </Link>
+            <Link
+              to="/projects/"
+              className="navbar-item is-size-5"
+              onClick={this.closeMenu}
+            >
+              PROJECTS
+            </Link>
+            <Link
+              to="/stack/"
+              className="navbar-item is-size-5"
+              onClick={this.closeMenu}
+            >
+              STACK
+            </Link>
+            <Link
+              to="/downloads/"
+              className="navbar-item is-size-5"
+              onClick={this.closeMenu}
+            >
+              DOWNLOADS
+            </Link>
+          </div>
+        </div>
+      </nav>
+    )
   }
 }
 
