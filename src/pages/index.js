@@ -6,6 +6,7 @@ import {
   faGithub,
   faLinkedin,
   faInstagram,
+  faWhatsapp
 } from "@fortawesome/free-brands-svg-icons"
 import { faAddressCard, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout"
@@ -69,12 +70,12 @@ const IndexPage = () => {
               </span>
             </a>
             <a
-              href="https://github.com/brenobaptista"
+              href="mailto:brenomb07@gmail.com"
               target="_blank"
-              aria-label="github"
+              aria-label="email"
             >
               <span className="icon is-large fa-2x">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faEnvelope} />
               </span>
             </a>
             <a
@@ -87,6 +88,15 @@ const IndexPage = () => {
               </span>
             </a>
             <a
+              href="https://github.com/brenobaptista"
+              target="_blank"
+              aria-label="github"
+            >
+              <span className="icon is-large fa-2x">
+                <FontAwesomeIcon icon={faGithub} />
+              </span>
+            </a>
+            <a
               href="https://www.instagram.com/breno.mabapt/"
               target="_blank"
               aria-label="instagram"
@@ -96,12 +106,12 @@ const IndexPage = () => {
               </span>
             </a>
             <a
-              href="mailto:brenomb07@gmail.com"
+              href="https://wa.me/5585981830084"
               target="_blank"
-              aria-label="github"
+              aria-label="whatsapp"
             >
               <span className="icon is-large fa-2x">
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faWhatsapp} />
               </span>
             </a>
           </div>

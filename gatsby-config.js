@@ -3,9 +3,11 @@ module.exports = {
     title: `Breno Baptista`,
     description: `This website is the portfolio of the web developer Breno Baptista`,
     author: `Breno Baptista`,
+    siteUrl: "https://brenobaptista.github.io",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +27,7 @@ module.exports = {
         background_color: `#FFDD57`,
         theme_color: `#FFDD57`,
         display: `standalone`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,

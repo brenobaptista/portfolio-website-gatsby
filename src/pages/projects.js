@@ -122,6 +122,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.libretutor.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="libretutor"
                   />
                 }
@@ -136,6 +139,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.pomodoro.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="pomodoro"
                   />
                 }
@@ -148,7 +154,11 @@ const projects = ({ data }) => {
                 link="https://aeonplanner.netlify.com/"
                 tags={["PWA", "React", "Redux", "Node", "Full Stack"]}
                 image={
-                  <Img fixed={data.aeon.childImageSharp.fixed} alt="aeon" />
+                  <Img fixed={data.aeon.childImageSharp.fixed} 
+                  imgStyle={{
+                    borderRadius: "10%"
+                  }}
+                  alt="aeon" />
                 }
               />
             </div>
@@ -161,6 +171,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.spectacles.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="spectacles"
                   />
                 }
@@ -175,6 +188,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.calculator.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="calculator"
                   />
                 }
@@ -189,6 +205,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.bts.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="bts brindes"
                   />
                 }
@@ -203,6 +222,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.semanauniversitaria.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="semana universitaria"
                   />
                 }
@@ -230,7 +252,11 @@ const projects = ({ data }) => {
                 link="https://parrotmercantil.com.br"
                 tags={["Scrum", "Project Management"]}
                 image={
-                  <Img fixed={data.parrot.childImageSharp.fixed} alt="parrot" />
+                  <Img fixed={data.parrot.childImageSharp.fixed}
+                  imgStyle={{
+                    borderRadius: "10%"
+                  }}
+                  alt="parrot" />
                 }
               />
             </div>
@@ -241,7 +267,11 @@ const projects = ({ data }) => {
                 link="http://anmap.com.br"
                 tags={["Scrum", "Project Management"]}
                 image={
-                  <Img fixed={data.anmap.childImageSharp.fixed} alt="anmap" />
+                  <Img fixed={data.anmap.childImageSharp.fixed}
+                  imgStyle={{
+                    borderRadius: "10%"
+                  }}
+                  alt="anmap" />
                 }
               />
             </div>
@@ -252,7 +282,11 @@ const projects = ({ data }) => {
                 link="http://unijusjr.com.br"
                 tags={["Scrum", "Project Management"]}
                 image={
-                  <Img fixed={data.unijus.childImageSharp.fixed} alt="unijus" />
+                  <Img fixed={data.unijus.childImageSharp.fixed}
+                  imgStyle={{
+                    borderRadius: "10%"
+                  }}
+                  alt="unijus" />
                 }
               />
             </div>
@@ -278,6 +312,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.manjaro.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="manjaro i3"
                   />
                 }
@@ -292,6 +329,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.manjaro.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="manjaro i3 troubleshooting"
                   />
                 }
@@ -306,6 +346,9 @@ const projects = ({ data }) => {
                 image={
                   <Img
                     fixed={data.manjaro.childImageSharp.fixed}
+                    imgStyle={{
+                      borderRadius: "10%"
+                    }}
                     alt="manjaro kde"
                   />
                 }
