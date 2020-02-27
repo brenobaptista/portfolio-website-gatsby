@@ -63,8 +63,8 @@ const test = ({ data }) => {
         </div>
       </section>
       <section className="section is-size-4-desktop is-size-5-touch">
-        <div className="columns">
-          <div className="column is-half is-offset-one-quarter">
+        <div className="columns is-centered">
+          <div className="column is-half">
             <div data-aos="flip-down">
               <Card
                 title="Free Ebook (in Portuguese)"

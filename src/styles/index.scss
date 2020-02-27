@@ -1,62 +1,24 @@
 @import "./fonts.scss";
 @import "./theme.scss";
+@import "./custom-hr.scss";
+@import "./card.scss";
+@import "./etc.scss";
 
-@import "~bulma/bulma";
+// To import all of Bulma:
+// @import "~bulma/bulma";
 
-.photo {
-  margin: 5px auto 24px;
-}
-
-.card {
-  margin: 16px 0;
-  box-shadow: none;
-}
-
-.card:hover {
-  background-color: rgba(#d4d4d4, 0.15);
-}
-
-.no-scroll {
-  overflow: hidden !important;
-}
-
-.custom-hero {
-  background-color: #1b1d1e;
-  background-image: url("../images/noise.png");
-  border-style: solid;
-  border-width: 1px 0 1px 0;
-  border-color: #292929;
-}
-
-.custom-hr {
-  width: 40px;
-  margin: auto;
-}
-
-.custom-hr2 {
-  width: 230px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.custom-hr3 {
-  width: 100px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.custom-hr4 {
-  width: 280px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.custom-hr5 {
-  width: 40px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-.paragraph {
-  text-indent: 50px;
-}
+// To import just the requered styles:
+@import '~bulma/sass/utilities/_all'; // sass-lint:disable-line clean-import-paths
+@import '~bulma/sass/base/_all'; // sass-lint:disable-line clean-import-paths
+@import '~bulma/sass/elements/container';
+@import '~bulma/sass/elements/content';
+@import '~bulma/sass/elements/icon';
+@import '~bulma/sass/elements/image';
+@import '~bulma/sass/elements/title';
+@import '~bulma/sass/elements/tag';
+@import '~bulma/sass/layout/section';
+@import '~bulma/sass/layout/hero';
+@import '~bulma/sass/components/navbar';
+@import '~bulma/sass/components/card';
+@import '~bulma/sass/components/media';
+@import '~bulma/sass/grid/columns';
